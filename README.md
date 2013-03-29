@@ -1,4 +1,4 @@
 he_dns
 ======
 
-Hurricane Electric dynamic DNS update utility
+Hurricane Electric dynamic DNS update utility.
