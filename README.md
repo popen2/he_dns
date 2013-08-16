@@ -1,8 +1,8 @@
 update_he_dns.py
 ================
 
-    usage: update_he_dns.py [-h] [-u UPDATE_URL] [-d IPV4_DISCOVER_URL]
-                            [-i IPV4_ADDRESS]
+    usage: update_he_dns.py [-h] [-u UPDATE_URL] [-d DISCOVER_URL] [-t TYPE]
+                            [-i IP_ADDRESS]
                             hostname password
     
     positional arguments:
@@ -15,8 +15,9 @@ update_he_dns.py
       -h, --help            show this help message and exit
       -u UPDATE_URL, --update-url UPDATE_URL
                             URL to post the update to
-      -d IPV4_DISCOVER_URL, --ipv4-discover-url IPV4_DISCOVER_URL
-                            Service for discovery of own IPv4 address
-      -i IPV4_ADDRESS, --ipv4-address IPV4_ADDRESS
-                            The IPv4 address to be updated for this domain. Leave
+      -d DISCOVER_URL, --discover-url DISCOVER_URL
+                            Service for discovery of own address
+      -t TYPE, --type TYPE  Type of update: either "4" for IPv4 or "6" for IPv6
+      -i IP_ADDRESS, --ip-address IP_ADDRESS
+                            The IP address to be updated for this domain. Leave
                             blank to auto-discover
